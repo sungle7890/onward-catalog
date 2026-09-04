@@ -1,0 +1,1539 @@
+{
+  "version": "b832b9548245",
+  "publishedAt": "2026-09-04",
+  "documentTypes": [
+    {
+      "code": "green-card",
+      "name": "Green card",
+      "category": "Identity & status",
+      "typicalValidityMonths": 120,
+      "requiresOriginal": false,
+      "officialUrl": "https://www.uscis.gov/green-card"
+    },
+    {
+      "code": "passport",
+      "name": "Passport (your home country)",
+      "category": "Identity & status",
+      "typicalValidityMonths": 120,
+      "typicalLeadTimeDays": 45,
+      "requiresOriginal": true
+    },
+    {
+      "code": "us-passport",
+      "name": "U.S. passport",
+      "category": "Identity & status",
+      "typicalValidityMonths": 120,
+      "typicalLeadTimeDays": 42,
+      "requiresOriginal": true,
+      "officialUrl": "https://travel.state.gov/en/passports.html"
+    },
+    {
+      "code": "ead",
+      "name": "Work permit (EAD card)",
+      "category": "Identity & status",
+      "typicalValidityMonths": 24,
+      "typicalLeadTimeDays": 150,
+      "requiresOriginal": true,
+      "officialUrl": "https://www.uscis.gov/i-765"
+    },
+    {
+      "code": "i-94",
+      "name": "I-94 arrival record",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 1,
+      "officialUrl": "https://i94.cbp.dhs.gov/"
+    },
+    {
+      "code": "visa-stamp",
+      "name": "Visa stamp in your passport",
+      "category": "Identity & status"
+    },
+    {
+      "code": "i-797",
+      "name": "Approval notice (I-797)",
+      "category": "Identity & status",
+      "requiresOriginal": true
+    },
+    {
+      "code": "state-id",
+      "name": "Driver's licence or state ID",
+      "category": "Identity & status",
+      "typicalValidityMonths": 60,
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "birth-certificate",
+      "name": "Birth certificate",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 60,
+      "requiresOriginal": true
+    },
+    {
+      "code": "marriage-certificate",
+      "name": "Marriage certificate",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "divorce-decree",
+      "name": "Divorce decree",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "death-certificate",
+      "name": "Death certificate",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "name-change-order",
+      "name": "Court order for a name change",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "police-certificate",
+      "name": "Police certificate",
+      "category": "Civil records",
+      "recencyMonths": 12,
+      "typicalLeadTimeDays": 45,
+      "requiresOriginal": true
+    },
+    {
+      "code": "court-disposition",
+      "name": "Court records for an arrest or citation",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "tax-transcript",
+      "name": "Tax records",
+      "category": "Money & work",
+      "recencyMonths": 12,
+      "typicalLeadTimeDays": 21,
+      "officialUrl": "https://www.irs.gov/individuals/get-transcript"
+    },
+    {
+      "code": "bank-statement",
+      "name": "Bank statement",
+      "category": "Money & work",
+      "recencyMonths": 3,
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "employment-letter",
+      "name": "Letter from your employer",
+      "category": "Money & work",
+      "recencyMonths": 3,
+      "typicalLeadTimeDays": 10
+    },
+    {
+      "code": "i-864",
+      "name": "Sponsor's financial support form (I-864)",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 14,
+      "officialUrl": "https://www.uscis.gov/i-864"
+    },
+    {
+      "code": "medical-exam",
+      "name": "Medical exam (I-693)",
+      "category": "Health",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true,
+      "officialUrl": "https://www.uscis.gov/i-693"
+    },
+    {
+      "code": "relationship-evidence",
+      "name": "Proof of your relationship",
+      "category": "Life together",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "joint-documents",
+      "name": "Documents in both your names",
+      "category": "Life together",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "photos-together",
+      "name": "Photos together over the years",
+      "category": "Life together",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "passport-photo",
+      "name": "Passport-style photo",
+      "category": "Forms & translations",
+      "recencyMonths": 6,
+      "typicalLeadTimeDays": 3
+    },
+    {
+      "code": "ds-160",
+      "name": "DS-160 confirmation page",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 2,
+      "officialUrl": "https://travel.state.gov/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application.html"
+    },
+    {
+      "code": "selective-service-letter",
+      "name": "Selective Service status information letter",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 45,
+      "officialUrl": "https://www.sss.gov/register/status-information-letter/"
+    },
+    {
+      "code": "interview-appointment",
+      "name": "Interview appointment confirmation",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 1
+    },
+    {
+      "code": "certified-translation",
+      "name": "Certified English translation",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 7,
+      "officialUrl": "https://www.uscis.gov/n-400"
+    },
+    {
+      "code": "n-648",
+      "name": "Form N-648 (medical disability exception)",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 21,
+      "officialUrl": "https://www.uscis.gov/n-648"
+    },
+    {
+      "code": "g-28",
+      "name": "Form G-28 (attorney or representative)",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 3,
+      "officialUrl": "https://www.uscis.gov/g-28"
+    },
+    {
+      "code": "n-426",
+      "name": "Form N-426 (certification of military service)",
+      "category": "Military",
+      "typicalLeadTimeDays": 30,
+      "officialUrl": "https://www.uscis.gov/n-426"
+    },
+    {
+      "code": "dd-214",
+      "name": "DD-214, NGB-22, or discharge orders",
+      "category": "Military",
+      "typicalLeadTimeDays": 45,
+      "requiresOriginal": false
+    },
+    {
+      "code": "military-orders",
+      "name": "Official military orders",
+      "category": "Military",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "annulment-decree",
+      "name": "Annulment decree",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30,
+      "requiresOriginal": true
+    },
+    {
+      "code": "spouse-citizenship-evidence",
+      "name": "Proof your spouse is a U.S. citizen",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 21,
+      "officialUrl": "https://www.uscis.gov/n-400"
+    },
+    {
+      "code": "arrest-record",
+      "name": "Arrest report and agency statement",
+      "category": "Court & police records",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "sentencing-record",
+      "name": "Sentencing record and proof you completed it",
+      "category": "Court & police records",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "vacatur-order",
+      "name": "Order vacating, sealing, or expunging a record",
+      "category": "Court & police records",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "traffic-record",
+      "name": "Traffic incident records",
+      "category": "Court & police records",
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "fine-payment-record",
+      "name": "Proof you paid a fine or restitution",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "tax-payment-agreement",
+      "name": "IRS or state payment agreement",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "child-support-evidence",
+      "name": "Proof you pay child support",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "residence-evidence",
+      "name": "Proof you kept living in the U.S.",
+      "category": "Proof of residence",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "guardianship-order",
+      "name": "Court order for a guardian or surrogate",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "vaccination-record",
+      "name": "Vaccination record",
+      "category": "Health",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "medical-records",
+      "name": "Medical records",
+      "category": "Health",
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "pay-stubs",
+      "name": "Recent pay stubs",
+      "category": "Money & work",
+      "recencyMonths": 3,
+      "typicalLeadTimeDays": 3
+    },
+    {
+      "code": "w2",
+      "name": "W-2 or 1099",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "offer-letter",
+      "name": "Job offer letter",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "business-license",
+      "name": "Business licence or registration",
+      "category": "Money & work",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "lease-agreement",
+      "name": "Lease or rental agreement",
+      "category": "Proof of residence",
+      "typicalLeadTimeDays": 3
+    },
+    {
+      "code": "mortgage-statement",
+      "name": "Mortgage statement or deed",
+      "category": "Proof of residence",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "utility-bill",
+      "name": "Utility bill",
+      "category": "Proof of residence",
+      "recencyMonths": 3,
+      "typicalLeadTimeDays": 3
+    },
+    {
+      "code": "drivers-license",
+      "name": "Driver's licence",
+      "category": "Identity & status",
+      "typicalValidityMonths": 96,
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "social-security-card",
+      "name": "Social Security card",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "naturalization-certificate",
+      "name": "Certificate of naturalization",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 60
+    },
+    {
+      "code": "citizenship-certificate",
+      "name": "Certificate of citizenship",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 60
+    },
+    {
+      "code": "foreign-id",
+      "name": "National ID from your home country",
+      "category": "Identity & status",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "adoption-decree",
+      "name": "Adoption decree",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "family-register",
+      "name": "Family register or household record",
+      "category": "Civil records",
+      "typicalLeadTimeDays": 14
+    },
+    {
+      "code": "diploma",
+      "name": "Diploma or degree certificate",
+      "category": "Education",
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "transcript",
+      "name": "Academic transcript",
+      "category": "Education",
+      "typicalLeadTimeDays": 21
+    },
+    {
+      "code": "credential-evaluation",
+      "name": "Credential evaluation",
+      "category": "Education",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "enrollment-letter",
+      "name": "Enrolment letter",
+      "category": "Education",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "apostille",
+      "name": "Apostille or authentication",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "affidavit",
+      "name": "Sworn affidavit",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "power-of-attorney",
+      "name": "Power of attorney",
+      "category": "Forms & translations",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "military-service-record",
+      "name": "Military service record",
+      "category": "Military",
+      "typicalLeadTimeDays": 30
+    },
+    {
+      "code": "travel-itinerary",
+      "name": "Travel itinerary or tickets",
+      "category": "Travel",
+      "typicalLeadTimeDays": 1
+    },
+    {
+      "code": "invitation-letter",
+      "name": "Invitation letter",
+      "category": "Travel",
+      "typicalLeadTimeDays": 7
+    },
+    {
+      "code": "travel-insurance",
+      "name": "Travel insurance",
+      "category": "Travel",
+      "typicalValidityMonths": 12,
+      "typicalLeadTimeDays": 3
+    }
+  ],
+  "processes": [
+    {
+      "code": "B-1/B-2",
+      "name": "Visitor Visa (B-1/B-2)",
+      "plainName": "Visiting the United States",
+      "category": "Travel & Identity",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "U.S. Department of State",
+      "jurisdiction": "federal",
+      "summary": "Applying at a consulate for a tourist or business visitor visa.",
+      "officialUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "ds-160",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "interview-appointment",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "employment-letter",
+          "necessity": "recommended",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "bank-statement",
+          "necessity": "recommended",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "i-797",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "interview",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/us-visas/tourism-visit/visitor.html",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "DS-82",
+      "name": "U.S. Passport Renewal (DS-82)",
+      "plainName": "Renewing your U.S. passport",
+      "category": "Travel & Identity",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "U.S. Department of State",
+      "jurisdiction": "federal",
+      "summary": "Renewing a U.S. passport by mail.",
+      "officialUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "us-passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "name-change-order",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://travel.state.gov/en/passports/have-passport/renew.html",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-130",
+      "name": "Petition for Alien Relative (I-130)",
+      "plainName": "Sponsoring a family member",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Asking USCIS to recognise your relationship so a relative can apply.",
+      "officialUrl": "https://www.uscis.gov/i-130",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "us-passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "birth-certificate",
+          "necessity": "required",
+          "appliesToRelation": "other",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "relationship-evidence",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "divorce-decree",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "death-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "name-change-order",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-130",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-485",
+      "name": "Application to Register Permanent Residence (I-485)",
+      "plainName": "Getting a green card",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Applying for a green card while you are already in the United States.",
+      "officialUrl": "https://www.uscis.gov/i-485",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "birth-certificate",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "i-94",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "visa-stamp",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "medical-exam",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "i-864",
+          "necessity": "conditional",
+          "appliesToRelation": "sponsor",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "divorce-decree",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "police-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "court-disposition",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-485",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-539",
+      "name": "Application to Extend/Change Nonimmigrant Status (I-539)",
+      "plainName": "Extending or changing your status",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Used for H-4, F-2, B-2 and other dependent or visitor extensions from inside the U.S.",
+      "officialUrl": "https://www.uscis.gov/i-539",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "i-94",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "visa-stamp",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "i-797",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "birth-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "bank-statement",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "employment-letter",
+          "necessity": "conditional",
+          "appliesToRelation": "spouse",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-539",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-751",
+      "name": "Petition to Remove Conditions on Residence (I-751)",
+      "plainName": "Removing conditions on your green card",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Filing in the 90 days before a two-year green card expires.",
+      "officialUrl": "https://www.uscis.gov/i-751",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "green-card",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "joint-documents",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "photos-together",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "birth-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "child",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "divorce-decree",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "court-disposition",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-751",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-765",
+      "name": "Application for Employment Authorization (I-765)",
+      "plainName": "Getting a work permit",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Applying for or renewing an EAD card.",
+      "officialUrl": "https://www.uscis.gov/i-765",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "i-94",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "ead",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "i-797",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "state-id",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-765",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "I-90",
+      "name": "Application to Replace Permanent Resident Card (I-90)",
+      "plainName": "Renewing your green card",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Replacing a green card that is expiring, lost, or has the wrong details.",
+      "officialUrl": "https://www.uscis.gov/i-90",
+      "draft": true,
+      "requirements": [
+        {
+          "documentTypeCode": "green-card",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "state-id",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "name-change-order",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "latest",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/i-90",
+          "lastVerifiedAt": null
+        }
+      ]
+    },
+    {
+      "code": "N-400",
+      "name": "Application for Naturalization (N-400)",
+      "plainName": "Becoming a citizen",
+      "category": "Immigration & Citizenship",
+      "tier": "verified",
+      "riskClass": "high",
+      "agency": "USCIS",
+      "jurisdiction": "federal",
+      "summary": "Applying to become a U.S. citizen after holding a green card.",
+      "officialUrl": "https://www.uscis.gov/n-400",
+      "draft": false,
+      "officialPageUpdatedAt": "2026-06-16",
+      "requirements": [
+        {
+          "documentTypeCode": "green-card",
+          "necessity": "required",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "marriage-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "divorce-decree",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "annulment-decree",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "death-certificate",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "certified-translation",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "residence-evidence",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": true,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "passport",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "tax-transcript",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "arrest-record",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "sentencing-record",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "vacatur-order",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "traffic-record",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "fine-payment-record",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "tax-payment-agreement",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "child-support-evidence",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "selective-service-letter",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "n-648",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "spouse-citizenship-evidence",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "n-426",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "dd-214",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "military-orders",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "guardianship-order",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "passport-photo",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        },
+        {
+          "documentTypeCode": "g-28",
+          "necessity": "conditional",
+          "appliesToRelation": "self",
+          "validAtMilestone": "filing",
+          "commonlyNeeded": false,
+          "sourceUrl": "https://www.uscis.gov/n-400",
+          "lastVerifiedAt": "2026-09-03"
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "ko": {
+      "categories": {
+        "Identity & status": "신분 서류",
+        "Civil records": "민원 서류",
+        "Court & police records": "법원·경찰 기록",
+        "Money & work": "소득·직장",
+        "Proof of residence": "거주 증빙",
+        "Health": "건강",
+        "Life together": "함께 산 증거",
+        "Military": "병역",
+        "Forms & translations": "양식·번역",
+        "Education": "학력",
+        "Travel": "여행"
+      },
+      "documentTypes": {
+        "green-card": "영주권 카드",
+        "passport": "여권 (본국)",
+        "us-passport": "미국 여권",
+        "ead": "취업 허가증 (EAD)",
+        "i-94": "I-94 입국 기록",
+        "visa-stamp": "여권의 비자 스탬프",
+        "i-797": "승인 통지서 (I-797)",
+        "state-id": "운전면허 또는 주 신분증",
+        "spouse-citizenship-evidence": "배우자의 미국 시민권 증명",
+        "birth-certificate": "출생증명서",
+        "marriage-certificate": "혼인증명서",
+        "divorce-decree": "이혼 판결문",
+        "annulment-decree": "혼인무효 판결문",
+        "death-certificate": "사망증명서",
+        "name-change-order": "개명 법원 명령",
+        "police-certificate": "무범죄증명서",
+        "court-disposition": "체포·소환 관련 법원 기록",
+        "arrest-record": "체포 기록 및 기관 확인서",
+        "sentencing-record": "양형 기록 및 이행 증명",
+        "vacatur-order": "기록 말소·봉인·삭제 명령",
+        "traffic-record": "교통사고 기록",
+        "tax-transcript": "세금 기록",
+        "bank-statement": "은행 거래내역서",
+        "employment-letter": "재직증명서",
+        "i-864": "재정보증서 (I-864)",
+        "fine-payment-record": "벌금·배상금 납부 증명",
+        "tax-payment-agreement": "국세청 또는 주 납부 합의서",
+        "child-support-evidence": "양육비 납부 증명",
+        "residence-evidence": "미국 계속 거주 증빙",
+        "medical-exam": "신체검사 (I-693)",
+        "relationship-evidence": "관계 입증 자료",
+        "joint-documents": "공동 명의 서류",
+        "photos-together": "함께 찍은 사진",
+        "passport-photo": "여권용 사진",
+        "ds-160": "DS-160 확인 페이지",
+        "selective-service-letter": "선발징병 등록 확인서",
+        "interview-appointment": "인터뷰 예약 확인서",
+        "certified-translation": "공증된 영문 번역본",
+        "n-648": "N-648 양식 (장애 예외)",
+        "g-28": "G-28 양식 (변호사 선임)",
+        "n-426": "N-426 양식 (군 복무 증명)",
+        "dd-214": "DD-214, NGB-22 또는 전역 명령",
+        "military-orders": "공식 군 명령서",
+        "guardianship-order": "후견인 법원 명령",
+        "vaccination-record": "예방접종 기록",
+        "medical-records": "진료 기록",
+        "pay-stubs": "최근 급여명세서",
+        "w2": "W-2 또는 1099",
+        "offer-letter": "채용 제안서",
+        "business-license": "사업자등록증",
+        "lease-agreement": "임대차 계약서",
+        "mortgage-statement": "주택담보대출 명세서 또는 등기부",
+        "utility-bill": "공과금 고지서",
+        "drivers-license": "운전면허증",
+        "social-security-card": "소셜시큐리티 카드",
+        "naturalization-certificate": "시민권 증서",
+        "citizenship-certificate": "국적 증서",
+        "foreign-id": "본국 신분증",
+        "adoption-decree": "입양 판결문",
+        "family-register": "가족관계증명서",
+        "diploma": "졸업증명서",
+        "transcript": "성적증명서",
+        "credential-evaluation": "학력 인증 평가서",
+        "enrollment-letter": "재학증명서",
+        "apostille": "아포스티유 또는 영사확인",
+        "affidavit": "선서 진술서",
+        "power-of-attorney": "위임장",
+        "military-service-record": "병적증명서",
+        "travel-itinerary": "여행 일정 또는 항공권",
+        "invitation-letter": "초청장",
+        "travel-insurance": "여행자 보험"
+      },
+      "processes": {
+        "N-400": {
+          "plainName": "시민권 신청",
+          "summary": "영주권을 가진 뒤 미국 시민이 되기 위한 신청이에요."
+        },
+        "I-485": {
+          "plainName": "영주권 신청",
+          "summary": "미국 안에 있는 상태에서 영주권을 신청해요."
+        },
+        "I-130": {
+          "plainName": "가족 초청",
+          "summary": "가족이 신청할 수 있도록 관계를 인정받는 절차예요."
+        },
+        "I-751": {
+          "plainName": "영주권 조건 해제",
+          "summary": "2년짜리 영주권 만료 90일 전에 접수해요."
+        },
+        "I-90": {
+          "plainName": "영주권 갱신",
+          "summary": "만료·분실되었거나 정보가 틀린 영주권을 새로 받아요."
+        },
+        "I-765": {
+          "plainName": "취업 허가 신청",
+          "summary": "EAD 카드를 새로 받거나 갱신해요."
+        },
+        "I-539": {
+          "plainName": "체류 신분 연장·변경",
+          "summary": "미국 안에서 H-4, F-2, B-2 같은 신분을 연장하거나 바꿔요."
+        },
+        "B-1/B-2": {
+          "plainName": "방문 비자",
+          "summary": "영사관에서 관광 또는 상용 방문 비자를 신청해요."
+        },
+        "DS-82": {
+          "plainName": "미국 여권 갱신",
+          "summary": "우편으로 미국 여권을 갱신해요."
+        }
+      }
+    }
+  }
+}
