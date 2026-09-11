@@ -83,6 +83,79 @@ carries an identifier — the app fetches `latest.json` and nothing else. There 
 nothing here that knows who asked.
 정적 파일뿐입니다. API도, 인증도, 사용자별 상태도 없습니다.
 
+## Where the data comes from / 출처
+
+Every entry is drawn from the agency's own published page, and every requirement
+carries the `sourceUrl` it was read from. Nothing is second-hand.
+모든 항목은 해당 기관의 공식 페이지에서 가져왔고, 각 요건이 출처 URL을 함께 들고
+있습니다.
+
+| Source | References | What it covers |
+|---|---|---|
+| `www.uscis.gov` | 92 | Immigration forms and their evidence lists |
+| `travel.state.gov` | 17 | Passports and visas |
+| `i94.cbp.dhs.gov` | 1 | Arrival/departure record (I-94) |
+| `www.irs.gov` | 1 | Tax transcripts |
+| `www.sss.gov` | 1 | Selective Service registration |
+
+All five are **U.S. federal government sites**, and works of the U.S. federal
+government are in the public domain in the United States. What this repository
+adds is selection, structure, and the lead-time and validity figures — which is
+also why CC0 is the honest licence for it (below).
+다섯 곳 모두 **미국 연방정부 사이트**이며, 미국 연방정부 저작물은 미국 내에서
+퍼블릭 도메인입니다.
+
+### Dates / 날짜
+
+Three different dates appear, and they mean different things:
+
+| Field | Where | Meaning |
+|---|---|---|
+| `publishedAt` | pointer + catalog root | When **this build** was published |
+| `officialPageUpdatedAt` | per process | When the **agency** last changed its page, as the page itself states |
+| `lastVerifiedAt` | per requirement | When **we** read that requirement against its source |
+
+As published on **2026-09-04** (catalog `b832b9548245`):
+
+| Process | Status | Official page updated | We checked |
+|---|---|---|---|
+| `N-400` Naturalization | published | 2026-06-16 | 2026-09-03 |
+| `I-130` · `I-485` · `I-765` · `I-539` · `I-751` · `I-90` · `DS-82` · `B-1/B-2` | **draft** | — | **not yet checked** |
+
+**Eight of the nine are drafts.** A draft is a list assembled from the official
+page but **not yet verified against it line by line**, and it carries no
+`lastVerifiedAt` — the parser refuses a published entry that has none, which is
+what keeps the distinction honest. Treat a draft as a starting point, not an
+answer.
+**9개 중 8개가 draft입니다.** 공식 페이지를 보고 정리했지만 **아직 한 줄씩 대조하지
+않은** 목록이며, 확인 날짜가 없습니다.
+
+## Licence / 라이선스
+
+**[CC0 1.0 Universal](LICENSE)** — public domain dedication. Use it for anything,
+commercially or not, no permission and no attribution required.
+**CC0 1.0** — 퍼블릭 도메인 헌정. 출처 표기 의무 없이 무엇에든 쓰실 수 있습니다.
+
+We chose CC0 over CC BY because the claim to attribution here is thin: which
+documents a procedure asks for is a **fact**, facts are not copyrightable, and
+most of these facts come from federal sources already in the public domain.
+Requiring credit would add friction to reuse in exchange for something we have
+little standing to ask.
+출처 표기를 요구할 근거가 약하기 때문입니다 — 절차에 필요한 서류는 **사실**이고,
+사실에는 저작권이 없습니다.
+
+**Attribution is not required, but a link back is welcome** — and if you
+redistribute this, please carry the caveat at the top of this file with it. The
+licence removes the legal obligation; it does not make an unverified immigration
+checklist safe to present as settled.
+표기는 의무가 아니지만 링크는 환영합니다. 다만 재배포하실 때는 **맨 위의 고지를 함께**
+전해 주세요.
+
+**CC0 covers the data in this repository only.** The Onward application source is
+not in this repository and is not licensed by it.
+**CC0는 이 저장소의 데이터에만 적용됩니다.** 앱 소스는 여기 없고 이 라이선스의
+대상이 아닙니다.
+
 ## Issues
 
 Corrections to the data are welcome as issues on this repository. **Pull requests
