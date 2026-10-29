@@ -171,7 +171,7 @@
         >
       </h1>
       <p class="updated">
-        <strong>Last updated: 2026-10-28</strong> · 최종 수정일: 2026-10-28
+        <strong>Last updated: 2026-10-29</strong> · 최종 수정일: 2026-10-29
       </p>
 
       <p class="lede">
@@ -264,63 +264,112 @@
 
       <h2>2. Network / 네트워크</h2>
       <p>
-        The app makes <strong>one kind of outbound request</strong>: asking
-        Google for the map tiles it draws the map out of.
+        The app draws its map with the <strong>Google Maps SDK</strong>, and
+        that SDK talks to Google. Google publishes what it sends, and the list
+        is longer than map tiles.
         <span class="ko"
-          >앱이 하는 외부 요청은 <strong>한 종류뿐</strong>입니다 — 지도를
-          그리기 위해 Google에 지도 타일을 요청하는 것입니다.</span
+          >이 앱은 <strong>Google Maps SDK</strong>로 지도를 그리며, 이 SDK는
+          Google과 통신합니다. Google이 무엇을 보내는지 공개하고 있고, 그
+          목록은 지도 타일보다 깁니다.</span
         >
       </p>
       <ul>
         <li>
-          Those requests carry
-          <strong>the area of the map currently on screen</strong>, because that
-          is what decides which tiles to send. So while you are looking at the
-          map, Google can tell which area you are looking at. This is Google's
-          processing, under
-          <a href="https://policies.google.com/privacy"
-            >Google's privacy policy</a
-          >.
+          <strong>The area of the map currently on screen</strong> — it is what
+          decides which tiles to send, so while you are looking at the map,
+          Google can tell which area you are looking at.
           <span class="ko"
-            >그 요청에는 <strong>화면에 표시 중인 지도 영역</strong>이 담깁니다.
-            어느 타일을 보낼지 정하는 것이 그것이기 때문입니다. 즉 지도를 보는
-            동안 Google은 어느 지역을 보고 있는지 알 수 있습니다. 이는 Google의
-            처리이며
-            <a href="https://policies.google.com/privacy"
-              >Google 개인정보처리방침</a
-            >을 따릅니다.</span
+            ><strong>화면에 표시 중인 지도 영역</strong> — 어느 타일을 보낼지
+            정하는 것이 그것이므로, 지도를 보는 동안 Google은 어느 지역을 보고
+            있는지 알 수 있습니다.</span
           >
         </li>
         <li>
-          They do <strong>not</strong> carry your recorded route, your ground,
-          or anything you typed. The app never sends those anywhere.
+          <strong>Your IP address</strong>, for understanding SDK usage.
           <span class="ko"
-            >기록한 경로나 영역, 입력한 내용은
-            <strong>담기지 않습니다.</strong> 앱은 그것들을 어디로도 보내지
-            않습니다.</span
+            ><strong>IP 주소</strong> — SDK 사용 현황 파악용.</span
+          >
+        </li>
+        <li>
+          <strong>Two pseudonymous identifiers</strong>: a Maps SDK identifier,
+          used to measure daily active SDK users, and an internal usage
+          attribution identifier, which Google states "is not used to identify
+          the user or for advertising attribution".
+          <span class="ko"
+            ><strong>가명 식별자 두 가지</strong> — 일일 활성 SDK 사용자 측정에
+            쓰이는 Maps SDK 식별자, 그리고 내부 사용 귀속 식별자. 후자에 대해
+            Google은 "사용자 식별이나 광고 어트리뷰션에는 사용하지 않는다"고
+            명시합니다.</span
+          >
+        </li>
+        <li>
+          <strong>Request metadata</strong>: your device's OS version, name,
+          model, brand and form factor, the SDK build and version, and the
+          number of results returned.
+          <span class="ko"
+            ><strong>요청 메타데이터</strong> — 기기의 OS 버전·이름·모델·브랜드·
+            폼팩터, SDK 빌드와 버전, 반환된 결과 수.</span
+          >
+        </li>
+        <li>
+          <strong>Crash data from inside the SDK</strong>: stack traces and
+          abnormal-termination metrics for code in the SDK itself.
+          <span class="ko"
+            ><strong>SDK 내부의 크래시 정보</strong> — SDK 코드에서 발생한 스택
+            트레이스와 비정상 종료 지표.</span
+          >
+        </li>
+        <li>
+          <strong>Map interaction events</strong> such as panning and zooming.
+          This app frames the map for you, which is what brings these into
+          scope.
+          <span class="ko"
+            ><strong>지도 조작 이벤트</strong> — 패닝·줌 등. 이 앱은 지도를
+            자동으로 맞춰 보여주므로 여기에 해당됩니다.</span
           >
         </li>
       </ul>
       <p>
-        <strong>There is no other network traffic.</strong> No analytics, no
-        advertising, no crash reporting, no telemetry SDK. None of these are
-        installed in the app.
+        Google's own page for app developers is the source, and it is public:
+        <a
+          href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure"
+          >Maps SDK for Android data disclosure</a
+        >. What Google then does with it is covered by
+        <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
         <span class="ko"
-          ><strong>그 외 네트워크 통신은 없습니다.</strong> 분석·광고·크래시
-          리포팅·텔레메트리 SDK 어느 것도 설치돼 있지 않습니다.</span
+          >출처는 Google이 앱 개발자를 위해 공개한 문서입니다. 이후 Google의
+          처리는 Google 개인정보처리방침을 따릅니다.</span
+        >
+      </p>
+      <p>
+        <strong
+          >What is never sent: your recorded routes and the ground you
+          hold.</strong
+        >
+        Those stay in the app's database on this device. There is no code that
+        uploads them and no server to upload them to. There is no analytics
+        SDK, no advertising SDK and no crash reporter of ours — the crash data
+        above is the Maps SDK reporting on itself, not this app reporting on
+        you.
+        <span class="ko"
+          ><strong>절대 전송되지 않는 것: 기록한 경로와 차지한 영역입니다.</strong>
+          기기 안의 앱 데이터베이스에 남습니다. 업로드하는 코드도, 업로드할
+          서버도 없습니다. 분석 SDK·광고 SDK·자체 크래시 리포터는 없습니다 —
+          위의 크래시 정보는 Maps SDK가 자기 자신에 대해 보고하는 것이지, 이
+          앱이 사용자에 대해 보고하는 것이 아닙니다.</span
         >
       </p>
       <div class="note">
         <p>
           We say this rather than claiming "nothing leaves the device", because
           drawing a map means asking someone for a map. The distinction that
-          matters is that Google is told <em>where the map is</em>, never
-          <em>where you went</em>.
+          matters is that Google is told <em>where the map is</em> and what kind
+          of device asked, never <em>where you went</em>.
           <span class="ko"
             >"아무것도 나가지 않는다"고 하지 않고 이렇게 적는 이유는, 지도를
             그리려면 누군가에게 지도를 요청해야 하기 때문입니다. 중요한 구분은
-            Google이 전달받는 것이 <em>지도의 위치</em>일 뿐
-            <em>사용자가 다닌 경로</em>가 아니라는 점입니다.</span
+            Google이 전달받는 것이 <em>지도의 위치</em>와 요청한 기기의 종류일
+            뿐 <em>사용자가 다닌 경로</em>가 아니라는 점입니다.</span
           >
         </p>
       </div>
